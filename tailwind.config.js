@@ -3,7 +3,7 @@
 const theme = require('tailwindcss/defaultTheme');
 
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}', 'node_modules/preline/dist/*.js'],
   theme: {
     fontSize: {
       'h1-large': [
@@ -55,5 +55,5 @@ export default {
       }
     }
   },
-  plugins: []
+  plugins: [require('preline/plugin')]
 };
