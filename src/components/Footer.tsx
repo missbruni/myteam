@@ -37,11 +37,15 @@ const Footer: React.FC<FooterProps> = () => {
         </div>
         <div className="flex mt-4 w-full sm:w-auto sm:mt-0 sm:flex-col items-end justify-between sm:justify-evenly">
           <div className="flex gap-x-4">
-            <Link to="facebook.com">
+            <a href="#">
               <FacebookIcon />
-            </Link>
-            <PinInterestIcon />
-            <TwitterIcon />
+            </a>
+            <a href="#">
+              <PinInterestIcon />
+            </a>
+            <a href="#">
+              <TwitterIcon />
+            </a>
           </div>
           <p className="text-white text-sm opacity-60">Copyright 2020. All Rights Reserved</p>
         </div>
