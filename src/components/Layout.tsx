@@ -8,8 +8,8 @@ const Layout: React.FC<LayoutProps> = () => {
   return (
     <div className="h-screen">
       <AppBar />
-      <div className="flex flex-col container h-screen mx-auto grow">
-        <div className="grow">
+      <div className="flex h-full flex-col">
+        <div className="grow container mx-auto">
           <Outlet />
         </div>
         <Footer />
