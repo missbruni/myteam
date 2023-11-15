@@ -6,9 +6,10 @@ import {
 } from 'react-router-dom';
 
 import AboutPage from './pages/About';
-import Layout from './pages/components/Layout';
 import ContactPage from './pages/Contact';
 import HomePage from './pages/Home';
+
+import Layout from './components/Layout';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
