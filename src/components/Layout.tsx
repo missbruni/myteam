@@ -8,7 +8,7 @@ const Layout: React.FC<LayoutProps> = () => {
   return (
     <div className="h-screen flex flex-col">
       <AppBar />
-      <div className="w-full flex flex-1 mx-auto border-4 border-yellow-400">
+      <div className="w-full flex flex-1">
         <Outlet />
       </div>
       <Footer />
