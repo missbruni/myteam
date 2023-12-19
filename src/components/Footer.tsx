@@ -12,8 +12,8 @@ const Footer: React.FC<FooterProps> = () => {
     <footer className="absolute bottom-0 z-50 py-6 md:py-12 px-6 md:px-12 w-full bg-dark-green text-center sm:text-left">
       <div className="flex mx-auto flex-wrap md:flex-nowrap">
         {/* Column One */}
-        <div className="w-full flex flex-col flex-wrap sm:flex-nowrap sm:justify-between sm:flex-row md:gap-x-8 lg:gap-x-32 md:w-3/5">
-          <div className="w-full sm:w-auto flex flex-col sm:justify-between items-center md:items-start md:pl-11">
+        <div className="w-full flex flex-col flex-wrap sm:flex-nowrap sm:justify-between md:justify-start sm:flex-row md:gap-x-8 lg:gap-x-32 md:w-3/5">
+          <div className="w-full sm:w-auto flex flex-col sm:pl-0 sm:justify-between items-center md:items-start lg:pl-11">
             <Logo className="h-6 md:h-10" />
             <div className=" w-full flex justify-center gap-x-4">
               <NavLink
