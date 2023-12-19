@@ -6,12 +6,10 @@ import Footer from './Footer';
 type LayoutProps = {};
 const Layout: React.FC<LayoutProps> = () => {
   return (
-    <div className="h-screen">
+    <div className="h-screen flex flex-col">
       <AppBar />
-      <div className="flex flex-col">
-        <div className="grow container mx-auto">
-          <Outlet />
-        </div>
+      <div className="w-full flex flex-1 mx-auto border-4 border-yellow-400">
+        <Outlet />
       </div>
       <Footer />
     </div>
