@@ -8,12 +8,12 @@ const Layout: React.FC<LayoutProps> = () => {
   return (
     <div className="h-screen">
       <AppBar />
-      <div className="flex h-full flex-col">
+      <div className="flex flex-col">
         <div className="grow container mx-auto">
           <Outlet />
         </div>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 };

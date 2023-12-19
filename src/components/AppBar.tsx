@@ -8,14 +8,14 @@ import SideBar from './SideBar';
 type AppBarProps = {};
 const AppBar: React.FC<AppBarProps> = () => {
   return (
-    <header className="z-50 w-full bg-midnight-green py-4 md:py-12 px-12 md:px-20 ">
+    <header className="z-50 w-full bg-midnight-green py-4 md:py-12 px-8 md:px-20 ">
       <nav>
         <div className="mx-auto max-w-7xl">
           <div className="flex h-16 items-center justify-between">
             <div className="flex flex-1 items-center sm:items-stretch sm:justify-start">
               <div className="flex flex-shrink-0">
                 <NavLink to="/">
-                  <Logo />
+                  <Logo height={40} />
                 </NavLink>
               </div>
               <div className="hidden sm:ml-14 sm:block flex-1">
