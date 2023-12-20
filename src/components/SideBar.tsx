@@ -51,7 +51,7 @@ const SideBar: React.FC<SideBarProps> = () => {
             </svg>
           </button>
         </div>
-        <div className="p-4">
+        <div className="p-4 z-[65]">
           <p className="text-gray-800 dark:text-gray-400">
             Some text as placeholder. In real life you can have the elements you have chosen. Like,
             text, images, lists, etc.
