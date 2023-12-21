@@ -9,7 +9,7 @@ import Logo from '../icons/logo.svg?react';
 type FooterProps = {};
 const Footer: React.FC<FooterProps> = () => {
   return (
-    <footer className="flex z-50 py-6 md:py-12 px-6 md:px-12 w-full bg-dark-green text-center sm:text-left">
+    <footer className="relative flex z-50 py-6 md:py-12 px-6 md:px-12 w-full bg-dark-green text-center sm:text-left">
       <div className="w-full flex mx-auto flex-wrap md:flex-nowrap">
         {/* Column One */}
         <div className="w-full flex flex-col flex-wrap sm:flex-nowrap sm:justify-between md:justify-start sm:flex-row md:gap-x-8 lg:gap-x-32 md:w-3/5">

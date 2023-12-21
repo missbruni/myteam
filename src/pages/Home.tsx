@@ -21,7 +21,7 @@ const HomePage: React.FC<HomePageProps> = () => {
     <div className="w-full flex flex-col justify-center sm:justify-start">
       <section className="flex flex-1 bg-midnight-green flex-col md:flex-row">
         <div className="w-full flex-1 flex flex-col justify-center md:justify-start items-center text-white gap-y-6 px-4 sm:px-11 py-24 sm:py-32">
-          <p className="text-[40px] sm:text-h1-small text-center font-bold leading-[45px] max-w-[290px] sm:max-w-[350px] sm:leading-[60px]">
+          <p className="text-[40px] md:text-h1-small text-center font-bold leading-[45px] max-w-[290px] sm:max-w-[350px] sm:leading-[60px]">
             Find the best <span className="text-[#f67e7e] leading-10">talent</span>
           </p>
           <p className="text-center leading-8 px-6 max-w-[500px] sm:max-w-[600px] text-base">
@@ -32,11 +32,11 @@ const HomePage: React.FC<HomePageProps> = () => {
         <PatternSvg2 className="w-[375px] md:hidden self-center" />
       </section>
 
-      <section className="w-full relative flex flex-col text-white bg-sacramento">
-        <PatternSvg3 className="absolute right-[-100px]" />
+      <section className="w-full relative flex flex-col text-white bg-sacramento overflow-hidden">
+        <PatternSvg3 className="absolute right-0 -mr-[100px]" />
         <div className="flex flex-col gap-y-10 p-8 z-10">
           <div className="w-[50px] h-[4px] bg-light-coral" />
-          <p className="text-[40px] sm:text-h1-small font-bold leading-[45px] sm:leading-[60px]">
+          <p className="text-[40px] md:text-h1-small font-bold leading-[45px] sm:leading-[60px]">
             Build & manage distributed teams like no one else.
           </p>
         </div>
@@ -63,12 +63,12 @@ const HomePage: React.FC<HomePageProps> = () => {
       <section className="w-full flex-1 flex flex-col  bg-deep-jungle">
         <PatternSvg4 />
         <div className="py-12 p-8 text-white">
-          <p className="text-[40px] sm:text-h1-small font-bold leading-[45px] sm:leading-[60px]">
+          <p className="text-[40px] md:text-h1-small font-bold leading-[45px] sm:leading-[60px]">
             Delivering real results for top companies. Some of our
             <span className="text-rapture-blue"> success stories.</span>
           </p>
         </div>
-        <div className="flex flex-col py-8 gap-y-10">
+        <div className="flex flex-col p-8 gap-y-10">
           {/* MOVE TO DATA */}
           <TestimonialItem
             imageUrl={KateAvatar}
@@ -93,15 +93,15 @@ const HomePage: React.FC<HomePageProps> = () => {
       </section>
 
       <section className="w-full relative flex-1 flex-col flex bg-light-coral">
-        <div className="flex p-8 flex-col sm:flex-row px-8 gap-y-4 gap-12 text-center items-center justify-center">
-          <p className="text-[40px] text-sacramento sm:text-h1-small font-bold leading-[45px] sm:leading-[60px] z-10">
+        <div className="flex p-8 py-14 pb-16 flex-col sm:flex-row px-8 gap-y-4 gap-12 items-center text-center justify-center">
+          <p className="text-[40px] text-sacramento md:text-h1-small font-bold leading-[45px] sm:leading-[60px] z-10">
             Ready to get started?
           </p>
           <NavLink className="z-10" to="/contact">
             <button className="btn-primary-dark whitespace-nowrap">Contact us</button>
           </NavLink>
         </div>
-        <PatternSvg6 className="absolute bottom-0" />
+        <PatternSvg6 className="absolute -bottom-6" />
       </section>
     </div>
   );
