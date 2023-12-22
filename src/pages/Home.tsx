@@ -22,13 +22,13 @@ const HomePage: React.FC<HomePageProps> = () => {
       {/* Section 1 */}
       <section className="w-full relative flex md:flex-1 flex-col md:flex-row bg-midnight-green px-6 sm:px-10 md:px-40 py-14 md:py-40 pb-[150px]">
         <PatternSvg1 className="absolute -ml-[100px] left-0 hidden md:block" />
-        <div className=" w-full flex-1 flex flex-col md:flex-row justify-center items-center text-white gap-y-6 gap-12 ">
-          <p className="text-center md:text-left text-[40px] md:text-h1-small font-bold leading-[45px] max-w-[290px] sm:max-w-[350px] sm:leading-[60px] z-10">
+        <div className=" w-full flex-1 flex flex-col md:flex-row justify-center items-center lg:justify-between gap-y-6 gap-12 ">
+          <p className="text-white text-center md:text-left text-[40px] lg:text-[100px] font-bold leading-[45px] max-w-[290px] sm:max-w-[540px] sm:leading-[100px] z-10">
             Find the best <span className="text-[#f67e7e] leading-10">talent</span>
           </p>
           <div className="flex flex-col gap-y-8">
             <div className="w-[50px] h-[4px] bg-rapture-blue hidden md:block" />
-            <p className="text-center md:text-left leading-8 md:px-0 max-w-[500px] sm:max-w-[600px] text-base z-10">
+            <p className="text-white text-center md:text-left leading-8 md:px-0 max-w-[500px] sm:max-w-[600px] text-[18px] z-10">
               Finding the right people and building high performing teams can be hard. Most
               companies aren’t tapping into the abundance of global talent. We’re about to change
               that.
@@ -39,15 +39,15 @@ const HomePage: React.FC<HomePageProps> = () => {
       </section>
 
       {/* Section 2 */}
-      <section className="w-full relative overflow-x-clip flex md:flex-1 flex-col md:flex-row md:gap-10 bg-sacramento px-6 sm:px-10 md:px-40 py-14 md:py-40">
-        <PatternSvg3 className="absolute top-0 md:top-auto right-0 md:bottom-0 -mr-[100px]" />
+      <section className="w-full relative overflow-x-clip flex md:flex-1 flex-col lg:flex-row md:gap-10 bg-sacramento px-6 sm:px-10 lg:px-40 py-14 lg:py-40">
+        <PatternSvg3 className="absolute top-0 lg:top-auto right-0 md:bottom-0 -mr-[100px]" />
         <div className="flex flex-col md:flex-1 gap-y-10 z-10">
           <div className="w-[50px] h-[4px] bg-light-coral" />
-          <p className="text-white text-[40px] md:text-h1-small font-bold leading-[45px] sm:leading-[60px] pr-20 mb-12 md:pr-0 md:mb-0">
+          <p className="text-white text-[40px] lg:text-[48px] lg:max-w-[500px] font-bold leading-[45px] sm:leading-[60px] pr-20 mb-12 lg:pr-0 lg:mb-0">
             Build & manage distributed teams like no one else.
           </p>
         </div>
-        <div className="flex flex-col md:flex-1 gap-y-6">
+        <div className="flex flex-col lg:flex-1 gap-y-6">
           <BuildManageItem
             Icon={PersonIcon}
             title="Experienced Individuals"
@@ -67,15 +67,15 @@ const HomePage: React.FC<HomePageProps> = () => {
       </section>
 
       {/* Section 3 */}
-      <section className="w-full relative flex md:flex-1 flex-col gap-y-10 bg-deep-jungle px-6 sm:px-10 md:px-40 md:py-40 py-14 pt-32 pb-28">
+      <section className="w-full relative flex lg:flex-1 flex-col gap-y-10 bg-deep-jungle px-6 py-14 pt-32 pb-28 sm:px-10 lg:px-40 lg:py-32">
         <PatternSvg4 className="absolute top-0 left-0" />
-        <p className="text-white text-[40px] md:text-h1-small font-bold leading-[45px] sm:leading-[60px] z-10">
+        <p className="text-white text-[40px] lg:text-[48px] text-center font-bold leading-[45px] sm:leading-[60px] z-10">
           Delivering real results for top companies. Some of our
           <span className="text-rapture-blue"> success stories.</span>
         </p>
 
         {/* TODO: move this to api mock or even internal endpoint ? */}
-        <div className="flex flex-col md:flex-row gap-y-10 md:gap-10">
+        <div className="flex flex-col lg:flex-row gap-y-10 lg:gap-10">
           <TestimonialItem
             imageUrl={KateAvatar}
             author="Kady Baker"
@@ -99,9 +99,9 @@ const HomePage: React.FC<HomePageProps> = () => {
       </section>
 
       {/* Section 4 */}
-      <section className="w-full relative flex md:flex-1 flex-col bg-light-coral px-6 sm:px-10 md:px-40 md:py-20 py-14 pb-24">
+      <section className="w-full relative flex md:flex-1 flex-col bg-light-coral px-6 sm:px-10 md:px-32 lg:px-48 md:py-20 py-14 pb-24">
         <div className="flex flex-col sm:flex-row gap-y-4 gap-24 items-center text-center justify-center md:justify-between">
-          <p className="text-[40px] text-sacramento md:text-h1-small font-bold leading-[45px] sm:leading-[60px] z-10">
+          <p className="text-[40px] text-sacramento lg:text-[48px] font-bold leading-[45px] sm:leading-[60px] z-10">
             Ready to get started?
           </p>
           <NavLink className="z-10" to="/contact">
