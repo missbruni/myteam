@@ -19,29 +19,35 @@ type HomePageProps = {};
 const HomePage: React.FC<HomePageProps> = () => {
   return (
     <div className="w-full flex flex-col justify-center sm:justify-start">
-      <section className="flex flex-1 bg-midnight-green flex-col md:flex-row">
-        <div className="w-full flex-1 flex flex-col justify-center md:justify-start items-center text-white gap-y-6 px-4 sm:px-11 py-24 sm:py-32">
-          <p className="text-[40px] md:text-h1-small text-center font-bold leading-[45px] max-w-[290px] sm:max-w-[350px] sm:leading-[60px]">
+      {/* Section 1 */}
+      <section className="w-full relative flex md:flex-1 flex-col md:flex-row bg-midnight-green px-6 sm:px-10 md:px-40 py-14 pb-[150px]">
+        <PatternSvg1 className="absolute -ml-[100px] left-0 hidden md:block" />
+        <div className=" w-full flex-1 flex flex-col md:flex-row justify-center items-center text-white gap-y-6 gap-12 ">
+          <p className="text-center md:text-left text-[40px] md:text-h1-small font-bold leading-[45px] max-w-[290px] sm:max-w-[350px] sm:leading-[60px] z-10">
             Find the best <span className="text-[#f67e7e] leading-10">talent</span>
           </p>
-          <p className="text-center leading-8 px-6 max-w-[500px] sm:max-w-[600px] text-base">
-            Finding the right people and building high performing teams can be hard. Most companies
-            aren’t tapping into the abundance of global talent. We’re about to change that.
-          </p>
+          <div className="flex flex-col gap-y-8">
+            <div className="w-[50px] h-[4px] bg-rapture-blue hidden md:block" />
+            <p className="text-center md:text-left leading-8 md:px-0 max-w-[500px] sm:max-w-[600px] text-base z-10">
+              Finding the right people and building high performing teams can be hard. Most
+              companies aren’t tapping into the abundance of global talent. We’re about to change
+              that.
+            </p>
+          </div>
         </div>
-        <PatternSvg2 className="w-[375px] md:hidden self-center" />
+        <PatternSvg2 className="w-[375px] absolute bottom-0 left-[50%] -translate-x-[50%] md:left-[80%] md:-translate-x-[80%]" />
       </section>
 
-      <section className="w-full relative flex flex-col text-white bg-sacramento overflow-hidden">
-        <PatternSvg3 className="absolute right-0 -mr-[100px]" />
-        <div className="flex flex-col gap-y-10 p-8 z-10">
+      {/* Section 2 */}
+      <section className="w-full relative overflow-x-clip flex md:flex-1 flex-col md:flex-row md:gap-10 bg-sacramento px-6 sm:px-10 md:px-40 py-14">
+        <PatternSvg3 className="absolute top-0 right-0 -mr-[100px]" />
+        <div className="flex flex-col md:flex-1 gap-y-10 z-10">
           <div className="w-[50px] h-[4px] bg-light-coral" />
-          <p className="text-[40px] md:text-h1-small font-bold leading-[45px] sm:leading-[60px]">
+          <p className="text-white text-[40px] md:text-h1-small font-bold leading-[45px] sm:leading-[60px] pr-20 mb-12 md:pr-0 md:mb-0">
             Build & manage distributed teams like no one else.
           </p>
         </div>
-
-        <div className="flex flex-col gap-y-6 p-8 pb-12">
+        <div className="flex flex-col md:flex-1 gap-y-6">
           <BuildManageItem
             Icon={PersonIcon}
             title="Experienced Individuals"
@@ -60,16 +66,16 @@ const HomePage: React.FC<HomePageProps> = () => {
         </div>
       </section>
 
-      <section className="w-full flex-1 flex flex-col  bg-deep-jungle">
-        <PatternSvg4 />
-        <div className="py-12 p-8 text-white">
-          <p className="text-[40px] md:text-h1-small font-bold leading-[45px] sm:leading-[60px]">
-            Delivering real results for top companies. Some of our
-            <span className="text-rapture-blue"> success stories.</span>
-          </p>
-        </div>
-        <div className="flex flex-col p-8 gap-y-10">
-          {/* MOVE TO DATA */}
+      {/* Section 3 */}
+      <section className="w-full relative flex md:flex-1 flex-col gap-y-10 bg-deep-jungle px-6 sm:px-10 md:px-40 py-14 pt-32 pb-28">
+        <PatternSvg4 className="absolute top-0 left-0" />
+        <p className="text-white text-[40px] md:text-h1-small font-bold leading-[45px] sm:leading-[60px] z-10">
+          Delivering real results for top companies. Some of our
+          <span className="text-rapture-blue"> success stories.</span>
+        </p>
+
+        {/* TODO: move this to api mock or even internal endpoint ? */}
+        <div className="flex flex-col md:flex-row gap-y-10 md:gap-10">
           <TestimonialItem
             imageUrl={KateAvatar}
             author="Kady Baker"
@@ -89,11 +95,12 @@ const HomePage: React.FC<HomePageProps> = () => {
             text="“Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month.”"
           />
         </div>
-        <PatternSvg5 className="self-end" />
+        <PatternSvg5 className="absolute bottom-0 right-0" />
       </section>
 
-      <section className="w-full relative flex-1 flex-col flex bg-light-coral">
-        <div className="flex p-8 py-14 pb-16 flex-col sm:flex-row px-8 gap-y-4 gap-12 items-center text-center justify-center">
+      {/* Section 4 */}
+      <section className="w-full relative flex md:flex-1 flex-col bg-light-coral px-6 sm:px-10 md:px-40 py-14 pb-24">
+        <div className="flex flex-col sm:flex-row gap-y-4 gap-24 items-center text-center justify-center md:justify-between">
           <p className="text-[40px] text-sacramento md:text-h1-small font-bold leading-[45px] sm:leading-[60px] z-10">
             Ready to get started?
           </p>
@@ -101,7 +108,7 @@ const HomePage: React.FC<HomePageProps> = () => {
             <button className="btn-primary-dark whitespace-nowrap">Contact us</button>
           </NavLink>
         </div>
-        <PatternSvg6 className="absolute -bottom-6" />
+        <PatternSvg6 className="absolute -bottom-0 left-0 -mb-6" />
       </section>
     </div>
   );
