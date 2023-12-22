@@ -99,7 +99,7 @@ const HomePage: React.FC<HomePageProps> = () => {
       </section>
 
       {/* Section 4 */}
-      <section className="w-full relative flex md:flex-1 flex-col bg-light-coral px-6 sm:px-10 md:px-40 md:py-40 py-14 pb-24">
+      <section className="w-full relative flex md:flex-1 flex-col bg-light-coral px-6 sm:px-10 md:px-40 md:py-20 py-14 pb-24">
         <div className="flex flex-col sm:flex-row gap-y-4 gap-24 items-center text-center justify-center md:justify-between">
           <p className="text-[40px] text-sacramento md:text-h1-small font-bold leading-[45px] sm:leading-[60px] z-10">
             Ready to get started?
