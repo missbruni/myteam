@@ -20,7 +20,7 @@ const HomePage: React.FC<HomePageProps> = () => {
   return (
     <div className="w-full flex flex-col justify-center sm:justify-start">
       {/* Section 1 */}
-      <section className="w-full relative flex md:flex-1 flex-col md:flex-row bg-midnight-green px-6 sm:px-10 md:px-40 py-14 pb-[150px]">
+      <section className="w-full relative flex md:flex-1 flex-col md:flex-row bg-midnight-green px-6 sm:px-10 md:px-40 py-14 md:py-40 pb-[150px]">
         <PatternSvg1 className="absolute -ml-[100px] left-0 hidden md:block" />
         <div className=" w-full flex-1 flex flex-col md:flex-row justify-center items-center text-white gap-y-6 gap-12 ">
           <p className="text-center md:text-left text-[40px] md:text-h1-small font-bold leading-[45px] max-w-[290px] sm:max-w-[350px] sm:leading-[60px] z-10">
@@ -39,8 +39,8 @@ const HomePage: React.FC<HomePageProps> = () => {
       </section>
 
       {/* Section 2 */}
-      <section className="w-full relative overflow-x-clip flex md:flex-1 flex-col md:flex-row md:gap-10 bg-sacramento px-6 sm:px-10 md:px-40 py-14">
-        <PatternSvg3 className="absolute top-0 right-0 -mr-[100px]" />
+      <section className="w-full relative overflow-x-clip flex md:flex-1 flex-col md:flex-row md:gap-10 bg-sacramento px-6 sm:px-10 md:px-40 py-14 md:py-40">
+        <PatternSvg3 className="absolute top-0 md:top-auto right-0 md:bottom-0 -mr-[100px]" />
         <div className="flex flex-col md:flex-1 gap-y-10 z-10">
           <div className="w-[50px] h-[4px] bg-light-coral" />
           <p className="text-white text-[40px] md:text-h1-small font-bold leading-[45px] sm:leading-[60px] pr-20 mb-12 md:pr-0 md:mb-0">
@@ -67,7 +67,7 @@ const HomePage: React.FC<HomePageProps> = () => {
       </section>
 
       {/* Section 3 */}
-      <section className="w-full relative flex md:flex-1 flex-col gap-y-10 bg-deep-jungle px-6 sm:px-10 md:px-40 py-14 pt-32 pb-28">
+      <section className="w-full relative flex md:flex-1 flex-col gap-y-10 bg-deep-jungle px-6 sm:px-10 md:px-40 md:py-40 py-14 pt-32 pb-28">
         <PatternSvg4 className="absolute top-0 left-0" />
         <p className="text-white text-[40px] md:text-h1-small font-bold leading-[45px] sm:leading-[60px] z-10">
           Delivering real results for top companies. Some of our
@@ -99,7 +99,7 @@ const HomePage: React.FC<HomePageProps> = () => {
       </section>
 
       {/* Section 4 */}
-      <section className="w-full relative flex md:flex-1 flex-col bg-light-coral px-6 sm:px-10 md:px-40 py-14 pb-24">
+      <section className="w-full relative flex md:flex-1 flex-col bg-light-coral px-6 sm:px-10 md:px-40 md:py-40 py-14 pb-24">
         <div className="flex flex-col sm:flex-row gap-y-4 gap-24 items-center text-center justify-center md:justify-between">
           <p className="text-[40px] text-sacramento md:text-h1-small font-bold leading-[45px] sm:leading-[60px] z-10">
             Ready to get started?
